@@ -7,6 +7,12 @@ window.onload =()=>{
         panelFaqContainer[i].addEventListener('click', function(){
             //클릭시 처리 할 일
             console.log('나클릭..');
+            //FAQ 제목 클릭시 --> 본문이 보이게끔 --> active 클래스 추가 .
+
+            //본문선택
+            let panelFaqAnswer= document.querySelectorAll('.panel-faq-answer');
+            // this.classList.add('active'); // 이렇게하면  디스는 panelFaqContainer 를 가르키기 때문에 안됨
+            panelFaqAnswer[i].classList.add('active');
         })
     }
 }
