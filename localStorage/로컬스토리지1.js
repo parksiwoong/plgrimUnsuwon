@@ -40,4 +40,11 @@ window.onload = ()=> {
         })
     })
 
+    const btnRLD = document.querySelector('.btnRemoveLocalData');
+    btnRLD.addEventListener('click', ()=>{
+        //할 일 처리 --> 해당 키의 로컬 데이터 삭제
+        localStorage.removeItem('userId');
+        alert('삭제완료!');
+    })
+
 }
